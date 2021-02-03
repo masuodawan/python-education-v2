@@ -1,0 +1,17 @@
+value=list(range(5))
+print("Enter five values: ")
+for i in range(5):
+    value[i]=input(f"Enter value #{i+1}: ")
+
+print("\nEntered values are: ")
+for i in range(5):
+    order="The entery#{} is {}"
+    print(order.format(i+1,value[i]))
+
+print("\nTypes of entered values are: ")   
+for j in range(5):
+    try:
+        value[j]=float(value[j])
+        print(f"Type of value #{j+1} is  {type(value[j])}")
+    except:
+        print(f"Type of value #{j+1} is  {type(value[j])}")
